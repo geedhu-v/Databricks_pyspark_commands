@@ -113,6 +113,69 @@ Syntax: dataframe_name.fillna('Value in string to replace the null value','all')
 2. subset <br>
 Syntax: dataframe_name.fillna('Value in string to replace the null value',subset=['col1_name','col2_name'])
 
+## Split and Indexing
+Split function, to split the string based on delimiters to a list.
+#### 1. Split 
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/6fd4575d-d6ff-4e30-9141-7e7d180d1253" />
+#### 2. Split with Indexing
+<img width="892" alt="image" src="https://github.com/user-attachments/assets/51207953-15e6-4375-b405-b7204fb4d835" />
+
+## Explode function
+It is a function, used to split the values in a list to separate values in the same column.
+<img width="896" alt="image" src="https://github.com/user-attachments/assets/21b1adcf-1c40-4077-9a71-9e82fb86ee8f" />
+<img width="143" alt="image" src="https://github.com/user-attachments/assets/ca5d993d-9801-48df-a102-1074af66b6ef" />
+
+## Array_contains
+It is a function to check for a particular value in a column that contains values in the form of a list/array.
+<img width="901" alt="image" src="https://github.com/user-attachments/assets/5581a935-b492-4650-bbca-214a3ee38941" />
+
+## Group_by
+Go to functions for all the aggregation tasks.
+<img width="923" alt="image" src="https://github.com/user-attachments/assets/a93b1e0c-664b-45d2-924d-246692b14372" />
+#### Performing group by with two columns and also perofrm aggregation on two columns.
+<img width="894" alt="image" src="https://github.com/user-attachments/assets/2b032349-c95a-4b98-a879-8db4e09149ff" />
+
+## Collect_List
+<img width="764" alt="image" src="https://github.com/user-attachments/assets/7720ce7c-ba32-463c-a79e-af4625667fa9" />
+#### Preparing dataframe
+<img width="920" alt="image" src="https://github.com/user-attachments/assets/fc4263ff-1110-4249-a6d8-40e5d314d637" />
+#### Performing Collect_list function
+<img width="915" alt="image" src="https://github.com/user-attachments/assets/d6a2a434-eee7-4ae3-92a8-d4d64009e05e" />
+
+## Pivot
+dataframe_name.groupBy('Column_name_which will be the Row value of pivot table').pivot('Column_name_which will be the Column value of Pivot table').agg(avg(column_name whose value to be aggrgated))
+<img width="545" alt="image" src="https://github.com/user-attachments/assets/e2c93629-aa62-4172-a8b7-0f2302bda8e7" />
+
+## When-Otherwise is a command similar to the 'case-when' command in SQL.
+
+<img width="919" alt="image" src="https://github.com/user-attachments/assets/ef12e9ba-5c60-4964-8a72-5aa581daf215" />
+
+#### Performing nested when otherwise conditions
+<img width="915" alt="image" src="https://github.com/user-attachments/assets/b04046d2-9df8-4862-9f45-5f7a060ddd38" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
