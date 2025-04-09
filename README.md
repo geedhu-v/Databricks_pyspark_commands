@@ -153,6 +153,23 @@ dataframe_name.groupBy('Column_name_which will be the Row value of pivot table')
 #### Performing nested when otherwise conditions
 <img width="915" alt="image" src="https://github.com/user-attachments/assets/b04046d2-9df8-4862-9f45-5f7a060ddd38" />
 
+## JOINS - Inner, Left, Right, Antijoin
+#### Antijoin - Whenever we want to fetch data from one dataframe that is unavailable in another dataframe.
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/c9a90360-fa60-48c7-8ee2-3144aa00b6cc" />
+
+## Window Functions are special functions meant to do row-level calculations, which cannot be achieved via traditional functions.
+### Use case: to avoid duplicates, or to create surrogate key
+### 1. ROW NUMBER() - that assigns a unique sequential number to each row in the result set of a query.
+### 2. Rank()
+### 3. DenseRank()
+
+
+
+
+
+
+
+
 
 
 
