@@ -157,7 +157,7 @@ dataframe_name.groupBy('Column_name_which will be the Row value of pivot table')
 #### Antijoin - Whenever we want to fetch data from one dataframe that is unavailable in another dataframe.
 <img width="905" alt="image" src="https://github.com/user-attachments/assets/c9a90360-fa60-48c7-8ee2-3144aa00b6cc" />
 
-## Window Functions are special functions meant to do row-level calculations, which cannot be achieved via traditional functions. Window functions are used to rank and order data within a window partition.
+# Window Functions are special functions meant to do row-level calculations, which cannot be achieved via traditional functions. Window functions are used to rank and order data within a window partition.
 ### Use case: to avoid duplicates, or to create a surrogate key
 ### 1. row_number() - ‘rank()’ assigns a unique rank to each row within a window partition based on the specified ordering. <be>
 ### If there are ties, ‘rank()’ will assign the same rank to rows with the same order value and leave gaps between ranks.
@@ -171,6 +171,16 @@ dataframe_name.groupBy('Column_name_which will be the Row value of pivot table')
 
 ### Difference between Rank and Dense rank in one image:
 <img width="898" alt="image" src="https://github.com/user-attachments/assets/d4dd1193-ef0d-4498-8bd4-20ca281e8b88" />
+
+## Scenarios using Window Function
+### 1. Cumulative Sum
+Syntax: dataframe_name.withColumn('NewColumnName',sum('ColumnNameAggregation').over(Window.orderBy('Reference_Column_Name').rowsBetween(Window.unboundedPreceding,Window.currentRow)))
+<img width="810" alt="image" src="https://github.com/user-attachments/assets/3f4a8c6c-d615-46f5-930f-67ff40960223" />
+<img width="433" alt="image" src="https://github.com/user-attachments/assets/e555fdda-26ed-4311-a173-eb8cc59328e3" />
+
+# User Defined Functions
+
+
 
 
 
