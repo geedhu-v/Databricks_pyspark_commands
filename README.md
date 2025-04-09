@@ -157,11 +157,26 @@ dataframe_name.groupBy('Column_name_which will be the Row value of pivot table')
 #### Antijoin - Whenever we want to fetch data from one dataframe that is unavailable in another dataframe.
 <img width="905" alt="image" src="https://github.com/user-attachments/assets/c9a90360-fa60-48c7-8ee2-3144aa00b6cc" />
 
-## Window Functions are special functions meant to do row-level calculations, which cannot be achieved via traditional functions.
-### Use case: to avoid duplicates, or to create surrogate key
-### 1. ROW NUMBER() - that assigns a unique sequential number to each row in the result set of a query.
-### 2. Rank()
-### 3. DenseRank()
+## Window Functions are special functions meant to do row-level calculations, which cannot be achieved via traditional functions. Window functions are used to rank and order data within a window partition.
+### Use case: to avoid duplicates, or to create a surrogate key
+### 1. row_number() - ‘rank()’ assigns a unique rank to each row within a window partition based on the specified ordering. <be>
+### If there are ties, ‘rank()’ will assign the same rank to rows with the same order value and leave gaps between ranks.
+<img width="917" alt="image" src="https://github.com/user-attachments/assets/11c14ecf-64c6-454b-b3f3-befe03720c3d" />
+
+### 2. rank() - assigns a unique rank to each row within a window partition based on the specified ordering and will assign the same rank to rows with the same order value and leave gaps between ranks.
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/0fc435d0-d6d0-4cf9-9e38-8adac753e2b5" />
+
+### 3. dense_Rank() - assigns a unique rank to each distinct row within a window partition based on the specified ordering and will assign the same rank to rows with the same order values but without leaving the gaps between ranks.
+<img width="891" alt="image" src="https://github.com/user-attachments/assets/605c2aaa-4f4b-42aa-9881-aad2f2527a62" />
+
+### Difference between Rank and Dense rank in one image:
+<img width="898" alt="image" src="https://github.com/user-attachments/assets/d4dd1193-ef0d-4498-8bd4-20ca281e8b88" />
+
+
+
+
+
+
 
 
 
