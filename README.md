@@ -178,7 +178,7 @@ Syntax: dataframe_name.withColumn('NewColumnName',sum('ColumnNameAggregation').o
 <img width="810" alt="image" src="https://github.com/user-attachments/assets/3f4a8c6c-d615-46f5-930f-67ff40960223" />
 <img width="433" alt="image" src="https://github.com/user-attachments/assets/e555fdda-26ed-4311-a173-eb8cc59328e3" />
 
-# User Defined Functions
+
 
 
 
